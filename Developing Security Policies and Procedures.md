@@ -169,3 +169,221 @@ Users must not:
 | Information Security Manager | Own and maintain the AUP, oversee its implementation, assess security-related exceptions, monitor effectiveness and coordinate periodic reviews. |
 | Human Resources (HR) | Support communication and awareness, maintain applicable employee acknowledgement records, and support or coordinate disciplinary processes arising from confirmed violations, in coordination with IT/Security and management. |
 | CEO / Senior Management | Approve the Policy, provide visible management support and ensure appropriate organizational resources are available for implementation. |
+
+## 2.6 Compliance and Enforcement
+
+Compliance with this Policy is mandatory for all persons within its scope.
+
+Suspected violations shall be reviewed through the appropriate NexusTech management, Information Security and/or HR processes. Depending on the nature and severity of the violation, appropriate action may include:
+
+- Security guidance or retraining.
+- Restriction or suspension of system access.
+- Removal of unauthorized applications or services.
+- Formal disciplinary action in accordance with applicable organizational processes, up to and including termination of employment or contract.
+- Contractual action for contractors or third parties.
+- Escalation to law enforcement or other authorities where unlawful activity is involved, or where otherwise required by applicable legal, regulatory or contractual obligations.
+
+HR and the employee's manager will be involved in any disciplinary process arising from a confirmed violation. Enforcement should be consistent and proportionate to the nature, severity and recurrence of the violation.
+
+## 2.7 Exceptions
+
+Exceptions to this Policy must not be granted informally.
+
+Where a legitimate business requirement prevents compliance, the requesting employee's manager must submit a documented exception request to the Information Security Manager describing the:
+
+**Business justification → affected policy requirement → risk → proposed compensating controls → requested duration.**
+
+The Information Security Manager shall assess the security risk associated with the request. Where necessary, the relevant system owner, business owner or management authority shall participate in the assessment and approval.
+
+Approved exceptions must:
+
+- Be formally approved before the deviation begins.
+- Include appropriate compensating controls where required.
+- Have a defined owner.
+- Have an expiry or review date and be subject to periodic review.
+- Be recorded in the organization’s exception register.
+
+Unapproved deviations are treated as violations. Expired exceptions must either be closed, renewed through a new assessment or brought back into compliance.
+
+## 2.8 Approval
+
+| Approval Field | Details |
+|---------------|---------|
+| Policy Owner | Information Security Manager |
+| Approval Authority | Marcus Vance, Chief Executive Officer |
+| Version | 1.0 |
+| Effective Date | 18 September 2026 |
+| Next Review Date | 18 September 2027 |
+
+- Approved by: Marcus Vance, Chief Executive Officer — Date: _______________
+
+# Task 3 Create an Actionable User Access Request Procedure
+
+The new policy framework requires all access to NexusTech systems to be formally requested, approved and provisioned. The Helpdesk currently acts on informal emails and chat messages, creating inconsistent permissions and unauthorised access risk.
+
+Develop a step-by-step User Access Request Procedure that a Helpdesk technician can follow consistently.
+
+## 3.1 Purpose and scope
+
+This procedure defines the steps a Helpdesk technician must follow to request, approve, provision, and record access to NexusTech systems, applications, and data. It applies to all new-hire, role-change and ad-hoc access requests involving employees, contractors, and third parties.
+
+## 3.2 Prerequisites, including required systems, approvals and authorised roles
+
+| Prerequisite | Requirement |
+|-------------|-------------|
+| Required system | Request submitted via an approved NexusTech ticketing/access-management workflow |
+| Approval | The request must have approval from the user's authorized manager and, where applicable, the relevant Data/System Owner |
+| Authorised roles | Only authorized Helpdesk/IT personnel may create accounts, modify accounts or provision approved access. |
+
+## 3.3 Request intake through an approved ticket or workflow
+
+Requester submits via the approved ticketing/workflow tool. Technician verifies the ticket contains: full name, department/role, manager, target system, requested role/access level, justification, start date, and end date (if temporary). Informal emails, chats, calls or verbal instructions are never actioned; incomplete requests are returned for correction.
+
+## 3.4 Verification of manager/data-owner approval
+
+Technician confirms the manager has approved the business need, role-fit, and appropriateness of the access level.
+
+For sensitive information, restricted applications, databases or other controlled resources, Data/System Owner approval is also required. Missing approvals place the request on hold.
+
+## 3.5 Account creation at a high level
+
+Once approvals are confirmed, an authorized technician checks for an existing account, creates a new one or selects the existing authorized account, applies required account settings, sets start/expiry dates for temporary access and enables required security controls.
+
+## 3.6 Role-based permission assignment and least-privilege checks
+
+Technician assigns permissions matching the approved role/profile, ensuring:
+
+- Access maps to an approved role where available.
+- Only permissions necessary for the user's duties are granted.
+- No unnecessary admin/privileged access.
+- Provisioned access does not exceed what was approved.
+
+Requests exceeding the standard role profile require additional approval before granting. Technician then verifies:
+
+```text
+Approved Access
+        ↓
+Role-Based Permission
+        ↓
+Least-Privilege Check
+        ↓
+Provisioned Access
+```
+
+Any excess or unauthorised permission is removed before proceeding.
+
+## 3.7 User/manager notification
+
+Technician confirms via notification: system/application, approved access role/level, effective date, expiry date (if applicable), any conditions, and Helpdesk contact for issues. Passwords/credentials are never sent via insecure channels.
+
+## 3.8 Evidence capture and ticket closure
+
+Before closing, technician verifies the ticket contains:
+
+- Original request.
+- Justification.
+- Manager approval.
+- Data/System Owner approval (where applicable).
+- Account created/modified.
+- Role/permissions assigned.
+- Provisioning date/time.
+- Responsible technician.
+- Least-privilege check evidence.
+- User/manager notification.
+
+Ticket is then marked Completed/Closed.
+
+## 3.9 Handling of emergency or exceptional requests
+
+Urgent access needs follow a defined emergency path rather than bypassing approval:
+
+```text
+Emergency request
+        ↓
+Document reason
+        ↓
+Obtain emergency approval
+        ↓
+Grant minimum necessary access
+        ↓
+Set expiry
+        ↓
+Review
+        ↓
+Remove or regularize access
+```
+
+Technician must:
+
+- Create/obtain an approved emergency ticket.
+- Record why normal processing couldn't be followed.
+- Obtain approval from an authorized manager or designated authority.
+- Grant only minimum necessary access, time-bound where possible.
+- Document permissions granted and who authorized them.
+- Arrange a post-event review.
+- Remove temporary access when no longer needed, or convert to standard access via normal approval.
+
+## 3.10 Record retention and audit trail expectations
+
+Completed requests and evidence are retained in the approved ticketing/identity-management/records repository per NexusTech's applicable retention requirements.
+
+The audit trail must answer:
+
+| Audit Question | Required Evidence |
+|----------------|-------------------|
+| Who requested access? | Requester/user details |
+| Why was it required? | Business justification |
+| Who approved it? | Manager and Data/System Owner approval |
+| What was approved? | Approved role/permission |
+| What was actually granted? | Provisioning record |
+| Who granted it? | Technician details |
+| When was it granted? | Date/time record |
+| Was completion verified? | Verification and closure evidence |
+
+Records must be protected from unauthorized alteration or deletion and remain available for access reviews, investigations and audits.
+
+# Task 4 Policy Implementation and Communication
+
+The AUP and User Access Request Procedure have been approved by the CEO. Your next responsibility is to ensure that employees understand and adopt the requirements. Simply emailing a PDF is not sufficient.
+
+Develop a Communication and Training Plan for the rollout of the new Acceptable Use Policy.
+
+## 4.1 Communication and Training Plan
+
+| Audience | Key Message / Training Content | Channel | Owner | Timing | Acknowledgement | Success Measure |
+|-----------|-------------------------------|---------|-------|--------|----------------|----------------|
+| All Employees | The new AUP outlines employee responsibilities for acceptable use, prohibited activities, reasonable personal use, credential protection, approved software and cloud services and incident reporting. | All-hands meeting; intranet policy page; mandatory e-learning module | Information Security Manager & HR | Week 1: announcement and publication. Week 2: mandatory training. | Electronic confirmation of having read, understood and agreed to comply with the AUP | ≥95% training completion; ≥95% policy acknowledgement; ≥90% knowledge-check pass rate |
+| IT / Helpdesk Staff | Their role in enforcing acceptable use and applying the User Access Request Procedure, ticket intake, approval verification, account creation, role-based permissions, least privilege, evidence capture, closure and emergency requests. | Instructor-led workshop; procedure walkthrough, practical scenarios, Helpdesk quick-reference guide | Information Security Manager & IT Manager | Week 1, before the new procedure goes live | Attendance recorded; scenario-based knowledge check completed | 100% of relevant staff trained before processing requests independently; ≥90% scenario assessment pass rate |
+| Managers / Data & System Owners | Management responsibilities for supporting the AUP and approving access legitimate business need, appropriate access levels, least privilege, enforcement and escalation of non-compliance. | Management briefing; email summary; intranet; manager quick-reference guide | Information Security Manager | Week 1, before employee-wide training completes | Electronic acknowledgement of policy and approval responsibilities | 100% of relevant managers briefed; reduction in incomplete/incorrect approvals within first 30 days |
+| Contractors / Relevant Third Parties | AUP applies to use of NexusTech devices, systems, networks and information approved systems, credential/information protection, prohibited activities, incident reporting. | Contractor onboarding; policy portal; email; security briefing where appropriate | Contract Owner, HR & Information Security | Before system access is granted, and on material policy changes | Electronic or signed acknowledgement before access is activated | 100% of applicable contractors acknowledge the AUP before receiving access |
+| Employees Who Don't Complete Training/Acknowledgement | Reinforce that training and acknowledgement are mandatory; explain the outstanding requirement and deadline. | Automated reminder; direct email; manager follow-up | HR & Information Security Manager | End of Week 2; Week 3 follow-up | Completion and acknowledgement recorded in the approved learning/policy system | Outstanding users reduced to <5%; unresolved cases escalated to the relevant manager |
+| Employees Showing Repeated Misunderstanding or Non-Compliance | Targeted clarification/refresher training on misunderstood requirements; repeated or deliberate violations escalated via management, Information Security and HR processes. | Targeted refresher training; one-to-one guidance; manager meeting; HR/Security escalation where appropriate | Information Security Manager, Manager & HR | As identified via knowledge checks, Helpdesk reports, incidents or monitoring | Retraining completion and corrective action documented | Improved knowledge-check results; reduction in repeated violations/misunderstandings |
+
+# Task 5 Policy Review and Maintenance
+
+One year later, NexusTech has migrated its primary database to AWS. A minor security incident also occurred when an employee shared a sensitive document through a personal cloud storage account. These changes require you to determine whether the AUP should be reviewed and updated.
+
+Prepare a Policy Review Memo to the Information Security Steering Committee.
+
+## 5.1 A concise 2–3 paragraph Policy Review Memo to the Information Security Steering Committee
+
+### MEMORANDUM
+
+**To:** Information Security Steering Committee  
+**From:** Information Security Manager  
+**Date:** 18 September 2027  
+**Subject:** Triggered Review of the Acceptable Use Policy (AUP), Version 1.0
+
+Two significant developments require an early review of NexusTech’s Acceptable Use Policy. First, the migration of the company’s primary database to AWS represents a major change to the technology environment and introduces new considerations around how company and client information is accessed, stored and shared in cloud services. Second, a recent incident involving an employee sharing a sensitive document through a personal cloud-storage account indicates a potential weakness in the current acceptable-use requirements or employee understanding of approved file-sharing methods. These events are clear review triggers and justify assessing whether the existing AUP remains suitable for NexusTech’s current operating environment.
+
+The review should involve consultation with Information Security, IT/Cloud Operations, Legal/Compliance, relevant Data and System Owners, HR and affected business units. The review process should include a risk assessment of cloud data handling and file-sharing practices and examination of relevant evidence, including the security incident record, system and access logs, Helpdesk records, policy exceptions and employee training or acknowledgement records. Based on the findings, the AUP should be updated to (1) clearly require company and client information to be stored, processed and shared only through NexusTech-approved cloud services and accounts, explicitly prohibiting personal cloud-storage services for business or sensitive information, and (2) provide clearer requirements for approved external file-sharing methods so employees understand how information can be shared securely when there is a legitimate business need. These changes should also be reinforced through targeted security awareness training.
+
+As the Policy Owner, the Information Security Manager should coordinate the review, stakeholder consultation and preparation of the revised AUP, with the updated version submitted to Marcus Vance, CEO, as the designated Approval Authority. Following approval, the revised policy should be version-controlled, communicated to affected users and supported by updated awareness or training where necessary. The AUP should continue to be formally reviewed annually, with an earlier review initiated following significant technology or cloud changes, material security incidents, major changes in business or client-data requirements, significant audit findings, or recurring policy violations. This approach ensures that the AUP remains relevant as NexusTech’s technology environment and security risks change.
+
+## Suggested Reference Resources
+
+1. GRC102 Week 2 course material: Developing Security Policies and Procedures.
+2. ISO/IEC 27001:2022 and ISO/IEC 27002 guidance relevant to information security governance and controls.
+3. NIST Cybersecurity Framework (CSF) 2.0.
+4. SOC 2 Trust Services Criteria concepts relevant to the scenario.
+5. Applicable internal policy-development guidance provided by the instructor.
